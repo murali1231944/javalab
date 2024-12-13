@@ -1,0 +1,6 @@
+package com.example.greetings
+public class Greeter {
+    public void sayHello(){
+        System.out.println("hello from the Greeter class!");
+   }
+}

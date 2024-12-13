@@ -1,0 +1,57 @@
+abstract class Animal{
+    protected String type;
+    public Animal(Strinmg type){
+        this.type= type;
+    }
+    public abstract void eat();
+    public abstract void sleep();
+}
+
+class Lion extends Animal{
+    private String type;
+    public Lion(String type){
+        super(type);
+    }
+    public void eat(){
+        System.out.println(this.getClass().simpleName()+" is the parent of "+type);
+        System.out.println(type+" eats flesh");
+    }
+    public void sleep(){
+        System.out.println(type+" sleeps more");
+    }
+}
+class Tiger extends Animal{
+    private String type;
+    public Tiger(String type){
+        super(type);
+    }
+    public void eat(){
+        System.out.println(this.getClass().simpleName()+" is the parent of "+type);
+        System.out.println(type+" eats flesh");
+    }
+    public void sleep(){
+        System.out.println(type+" sleeps more");
+    }
+}
+
+class Deer extends Animal{
+    private String type;
+    public Deer(String type){
+        super(type);
+    }
+    public void eat(){
+        System.out.println(this.getClass().simpleName()+" is the parent of "+type);
+        System.out.println(type+" eats flesh");
+    }
+    public void sleep(){
+        System.out.println(type+" sleeps more");
+    }
+}
+public class AnimalInfo(){
+    public static void main()[
+        Lion l1 = new Lion("Lion hybrid");
+        l1.eat();
+        l1.sleep();
+    }
+}
+ 
